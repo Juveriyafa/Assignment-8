@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #EAF4F4;
+            font-family: 'Roboto', sans-serif;
+            
+        }
+h2{
+    text-align: center;
+    padding-bottom: 1rem;
+    font-size: 24px;
+}
+        .login-container {
+            display: block;
+            background-color: #F6FFF8;
+            border: 1px solid lightcyan;
+           
+            padding: 2rem;
+
+            border-radius: 1rem;
+            min-height: 38vh;
+            width: 35vh;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        form input {
+            border: 1px solid lightgray;
+            font-size: 12px;
+            height: 2rem;
+            width: 100%;
+            padding-left: 0.5rem;
+            border-radius: 5px;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 2.5rem;
+        }
+        #submitbtn{
+            height: 2rem;
+            width: 100%;
+            background-color: #007BFF;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <h2>LOGIN</h2>
+        <form>
+            <div class="userdetails">
+                <p>Username</p>
+                <input type="text" id="username" placeholder="abc@gmail.com">
+                <p>Password</p>
+                <input type="password" id="password" placeholder="******">
+                <p>Forgot password?</p>
+                <button type="submit" id="submitbtn">Log in </button>
+            </div>
+
+        </form>
+    </div>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
